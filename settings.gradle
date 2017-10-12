@@ -1,1 +1,1 @@
-include ':app', ':WidgetArc'
+include ':app', ':WidgetArc', ':textcolorchange', ':ProgressBar', ':58LoadingView'

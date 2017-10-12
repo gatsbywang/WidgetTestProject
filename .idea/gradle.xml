@@ -8,8 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/58LoadingView" />
+            <option value="$PROJECT_DIR$/ProgressBar" />
             <option value="$PROJECT_DIR$/WidgetArc" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/textcolorchange" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

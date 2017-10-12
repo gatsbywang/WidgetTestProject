@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/58LoadingView/58LoadingView.iml" filepath="$PROJECT_DIR$/58LoadingView/58LoadingView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgressBar/ProgressBar.iml" filepath="$PROJECT_DIR$/ProgressBar/ProgressBar.iml" />
       <module fileurl="file://$PROJECT_DIR$/WidgetArc/WidgetArc.iml" filepath="$PROJECT_DIR$/WidgetArc/WidgetArc.iml" />
       <module fileurl="file://$PROJECT_DIR$/WidgetTestProject.iml" filepath="$PROJECT_DIR$/WidgetTestProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/textcolorchange/textcolorchange.iml" filepath="$PROJECT_DIR$/textcolorchange/textcolorchange.iml" />
     </modules>
   </component>
 </project>

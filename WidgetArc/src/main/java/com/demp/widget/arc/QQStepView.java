@@ -118,6 +118,7 @@ public class QQStepView extends View {
         //获取文字的宽度
         Rect textBounds = new Rect();
         mTextPaint.getTextBounds(stepText, 0, stepText.length(), textBounds);
+        //获取文字开始绘制的位置（这种为整体文字在中间）
         int dx = getWidth() / 2 - textBounds.width() / 2;
         //获取文字的基线
         Paint.FontMetricsInt fontMetricsInt = mTextPaint.getFontMetricsInt();
