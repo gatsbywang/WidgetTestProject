@@ -1,3 +1,4 @@
-include ':qqslidemenu'
+//include ':qqslidemenu', ':automobilehome'
+include ':sudoku'
 //include ':app', ':WidgetArc', ':textcolorchange', ':ProgressBar', ':58LoadingView', ':RatingBar', ':lettersidebar', ':flexlayout', ':touchview', ':kugouslidingmenu'
-include 'kugouslidingmenu'
+//include 'kugouslidingmenu'
