@@ -32,7 +32,7 @@ public class StatusBarUtil {
                 Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
             //4.4-5.0 使用技巧，首先设置为全屏，然后在状态栏的部分加一个布局
             //这个把状态栏都给弄没了
-            activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//            activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
             //这个是沉浸式
             activity.getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
