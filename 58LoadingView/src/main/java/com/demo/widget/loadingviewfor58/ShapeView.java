@@ -5,6 +5,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 
@@ -43,20 +44,20 @@ public class ShapeView extends View {
         switch (mCurrentShape) {
             case Square:
                 //画正方形
-                mPaint.setColor(Color.BLUE);
+                mPaint.setColor(ContextCompat.getColor(getContext(),R.color.rect));
                 canvas.drawRect(0, 0, getWidth(), getHeight(), mPaint);
                 break;
 
             case Circle:
                 //画圆形
                 int center = getWidth() / 2;
-                mPaint.setColor(Color.YELLOW);
+                mPaint.setColor(ContextCompat.getColor(getContext(),R.color.circle));
                 canvas.drawCircle(center, center, center, mPaint);
                 break;
 
             case Triangle:
                 //画等边三角形 Path 画路线
-                mPaint.setColor(Color.RED);
+                mPaint.setColor(ContextCompat.getColor(getContext(),R.color.triangle));
                 if (mPath == null) {
                     //画路径
                     mPath = new Path();
@@ -95,6 +96,10 @@ public class ShapeView extends View {
                 break;
         }
         postInvalidate();
+    }
+
+    public Shape getCurrentShape() {
+        return mCurrentShape;
     }
 
     public enum Shape {

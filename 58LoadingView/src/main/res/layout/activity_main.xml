@@ -10,17 +10,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.demo.widget.loadingviewfor58.MainActivity">
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="切换"
-        android:onClick="change"
-        />
 
-    <com.demo.widget.loadingviewfor58.ShapeView
-        android:id="@+id/shape_view"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_centerInParent="true"
-        />
+
+
 </RelativeLayout>
