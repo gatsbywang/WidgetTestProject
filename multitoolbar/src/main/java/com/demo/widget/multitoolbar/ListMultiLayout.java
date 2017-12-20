@@ -101,6 +101,20 @@ public class ListMultiLayout extends LinearLayout implements View.OnClickListene
     }
 
     /**
+     * 具体的观察者
+     */
+    private class AdapterMenuObserver extends MenuObserver {
+
+        @Override
+        public void closeMenu() {
+            //有注册就会收到通知
+            ListMultiLayout.this.closeMenu();
+        }
+    }
+
+    private AdapterMenuObserver mMenuObserver;
+
+    /**
      * 设置adapter
      *
      * @param adapter
@@ -109,7 +123,17 @@ public class ListMultiLayout extends LinearLayout implements View.OnClickListene
         if (adapter == null) {
             throw new RuntimeException("adapter null");
         }
+
+        if(mMenuObserver !=null) {
+            //观察者
+            mAdapter.unregisterDataSetObserver(mMenuObserver);
+        }
+
+
         this.mAdapter = adapter;
+        //注册观察者
+        mMenuObserver = new AdapterMenuObserver();
+        mAdapter.registerDataSetObserver(mMenuObserver);
 
         //获取有多少条
         int count = mAdapter.getCount();

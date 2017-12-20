@@ -34,6 +34,12 @@ public class MenuAdapter extends BaseMenuAdapter {
         //真正开发过程中，不同位置显示的布局不一样
         TextView menuView = (TextView) LayoutInflater.from(parent.getContext()).inflate(R.layout.item_menu, parent, false);
         menuView.setText(mItems[position]);
+        menuView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                closeMenu();
+            }
+        });
         return menuView;
     }
 
