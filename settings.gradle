@@ -1,4 +1,9 @@
 //include ':qqslidemenu', ':automobilehome'
-include ':sudoku'
-//include ':app', ':WidgetArc', ':textcolorchange', ':ProgressBar', ':58LoadingView', ':RatingBar', ':lettersidebar', ':flexlayout', ':touchview', ':kugouslidingmenu'
+//include ':sudoku', ':MaterialDesign_ImmersiveStatusBar', ':MaterialDesign_Behavior'
+//include ':app', ':WidgetArc', ':textcolorchange', ':ProgressBar', ':58LoadingView', ':RatingBar', ':lettersidebar',
+// ':flexlayout', ':touchview', ':kugouslidingmenu'
 //include 'kugouslidingmenu'
+//include ':58LoadingView', ':multitoolbar', ':flowerlivestreamingloading',
+//include ':beziercurve'
+include ':guidepage', ':YahooLoadingView'
+//include ':bezierflowlikes'
